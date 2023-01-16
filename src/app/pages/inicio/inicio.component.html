@@ -1,0 +1,15 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let dato of input">
+        {{dato | json}}
+    </li>
+</ul>
+<table class="table">
+    <thead>
+        <th>Separación</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of input">
+            <td>{{i | json}}</td>
+        </tr>
+    </tbody>
+</table>
